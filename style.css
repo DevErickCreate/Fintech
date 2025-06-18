@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.canvas-container {
+  max-width: 180px;
+  margin: 0 auto;
+  text-align: center; /* centraliza o canvas inline */
+  height: 180px;      /* define altura fixa para container */
+}
+
+canvas#graficoPizza {
+  display: inline-block;
+  width: 180px !important;
+  height: 180px !important;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 3px;
+}
+
+/* Cores específicas para cada legenda */
+.legend-color.investido {
+  background-color: blue;
+}
+
+.legend-color.conta {
+  background-color: green;
+}
+
+.legend-color.devendo {
+  background-color: red;
+}
+
+/* Para alinhar verticalmente o quadradinho com o texto */
+.legend-item {
+  display: flex;
+  align-items: center;
+}
